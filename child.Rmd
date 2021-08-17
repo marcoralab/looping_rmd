@@ -1,0 +1,6 @@
+### This is the child code block for `r "{{value_to_match}}"`
+
+```{r chunk1_{{value_to_match}}, include = T}
+value.to.match <- looplist[['{{value_to_match}}']]
+str(value.to.match)
+```
