@@ -22,11 +22,10 @@ looplist <- list(One = list(vec = "foo", val = "bar", meth = "baz"),
 
 Loop over chunks and change values
 
-```{r include=FALSE}
+```{r looping, include=T, echo = T}
 out = NULL
 for (i in names(looplist)) {
-  value_to_match <- i
-  
+  name_loop <- i
   out = c(out, knit_expand('child.Rmd'))
 }
 ```

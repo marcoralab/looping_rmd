@@ -1,6 +1,6 @@
-### This is the child code block for `r "{{value_to_match}}"`
+### This is the child code block for `r "{{name_loop}}"`
 
-```{r chunk1_{{value_to_match}}, include = T}
-value.to.match <- looplist[['{{value_to_match}}']]
-str(value.to.match)
+```{r chunk1_{{name_loop}}, include = T, echo = T}
+child_params <- looplist[['{{name_loop}}']]
+str(child_params)
 ```
